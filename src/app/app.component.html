@@ -1,19 +1,19 @@
 <div [class.base]="!yeet.isActive" [class.expanded]="yeet.isActive">
+    <div class="bio">
     <img src="../assets/profile.jpg" alt="my face" class="profile" />
     <h1>Sumaiya Asif</h1>
     <h3>Software Engineer in Austin, TX</h3>
     <div>
         <ul>
             <li><a routerLink="/about">About</a></li>
-            <li><a routerLink="/blog" routerLinkActive="expanded" #yeet="routerLinkActive">Blog</a></li>
+            <li><a routerLink="/blog" routerLinkActive #yeet="routerLinkActive">Blog</a></li>
             <li><a href="https://twitter.com/asif_i_care" target="_blank">Twitter</a></li>
             <li><a href="https://github.com/sumaiyaasif" target="_blank">Github</a></li>
             <li><a href="https://www.linkedin.com/in/sumaiyaasif/" target="_blank">LinkedIn</a></li>
         </ul>
     </div>
-
-
-    <div>
+</div>
+    <div class="content">
         <router-outlet></router-outlet>
     </div>
 </div>
